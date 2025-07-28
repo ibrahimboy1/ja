@@ -15,7 +15,8 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.8.0' # Match with your pubspec.yaml
+          flutter-version: '3.32.8'  # ✅ Your local Flutter version
+          channel: 'stable'         # ✅ Ensures Dart 3.8.1 is used
 
       - name: Install Dependencies
         run: flutter pub get
